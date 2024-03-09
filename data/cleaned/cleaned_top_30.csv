@@ -1,0 +1,691 @@
+ref_date,cause_of_death_icd_10,value,rank
+2000,Major cardiovascular diseases [I00-I78],76046,1
+2000,Malignant neoplasms [C00-C97],62672,2
+2000,Ischaemic heart diseases [I20-I25],42417,3
+2000,Acute myocardial infarction [I21-I22],19944,4
+2000,Cerebrovascular diseases [I60-I69],15576,5
+2000,Other heart diseases [I26-I51],11569,6
+2000,Chronic lower respiratory diseases [J40-J47],9813,7
+2000,Diabetes mellitus [E10-E14],6714,8
+2000,Alzheimer's disease [G30],5007,9
+2000,Influenza and pneumonia [J09-J18],4966,10
+2000,Malignant neoplasm of breast [C50],4901,11
+2000,Heart failure [I50],4835,12
+2000,Pneumonia [J12-J18],4399,13
+2000,Malignant neoplasm of prostate [C61],3718,14
+2000,Malignant neoplasm of pancreas [C25],3092,15
+2000,Renal failure [N17-N19],3070,16
+2000,Other diseases of circulatory system [I71-I78],3053,17
+2000,Motor vehicle accidents,2672,18
+2000,Non-Hodgkin's lymphoma [C82-C86],2537,19
+2000,Leukaemia [C91-C95],2048,20
+2000,Aortic aneurysm and dissection [I71],2028,21
+2000,Malignant neoplasm of stomach [C16],1988,22
+2000,Falls [W00-W19],1562,23
+2000,Malignant neoplasm of bladder [C67],1519,24
+2000,Parkinson's disease [G20-G21],1480,25
+2000,Malignant neoplasm of oesophagus [C15],1392,26
+2000,Malignant neoplasm of ovary [C56],1390,27
+2000,Sepsis [A40-A41],1357,28
+2000,Atherosclerosis [I70],1313,29
+2000,Malignant neoplasm of liver and intrahepatic bile ducts [C22],1291,30
+2001,Major cardiovascular diseases [I00-I78],74441,1
+2001,Malignant neoplasms [C00-C97],63774,2
+2001,Ischaemic heart diseases [I20-I25],41381,3
+2001,Acute myocardial infarction [I21-I22],19180,4
+2001,Cerebrovascular diseases [I60-I69],15452,5
+2001,Other heart diseases [I26-I51],11316,6
+2001,Chronic lower respiratory diseases [J40-J47],9773,7
+2001,Diabetes mellitus [E10-E14],7097,8
+2001,Alzheimer's disease [G30],5477,9
+2001,Malignant neoplasm of breast [C50],5017,10
+2001,Influenza and pneumonia [J09-J18],4776,11
+2001,Pneumonia [J12-J18],4684,12
+2001,Heart failure [I50],4645,13
+2001,Malignant neoplasm of prostate [C61],3825,14
+2001,Malignant neoplasm of pancreas [C25],3193,15
+2001,Renal failure [N17-N19],3150,16
+2001,Other diseases of circulatory system [I71-I78],3032,17
+2001,Motor vehicle accidents,2585,18
+2001,Non-Hodgkin's lymphoma [C82-C86],2553,19
+2001,Leukaemia [C91-C95],2093,20
+2001,Aortic aneurysm and dissection [I71],1954,21
+2001,Malignant neoplasm of stomach [C16],1861,22
+2001,Falls [W00-W19],1727,23
+2001,Parkinson's disease [G20-G21],1609,24
+2001,Malignant neoplasm of bladder [C67],1491,25
+2001,Malignant neoplasm of ovary [C56],1440,26
+2001,Malignant neoplasm of liver and intrahepatic bile ducts [C22],1406,27
+2001,Sepsis [A40-A41],1392,28
+2001,Malignant neoplasm of oesophagus [C15],1362,29
+2001,Malignant neoplasms of kidney and renal pelvis [C64-C65],1328,30
+2002,Major cardiovascular diseases [I00-I78],74209,1
+2002,Malignant neoplasms [C00-C97],65103,2
+2002,Ischaemic heart diseases [I20-I25],40607,3
+2002,Acute myocardial infarction [I21-I22],18914,4
+2002,Cerebrovascular diseases [I60-I69],15453,5
+2002,Other heart diseases [I26-I51],11541,6
+2002,Chronic lower respiratory diseases [J40-J47],9877,7
+2002,Diabetes mellitus [E10-E14],7868,8
+2002,Alzheimer's disease [G30],5515,9
+2002,Malignant neoplasm of breast [C50],5017,10
+2002,Influenza and pneumonia [J09-J18],4725,11
+2002,Heart failure [I50],4556,12
+2002,Pneumonia [J12-J18],4499,13
+2002,Malignant neoplasm of prostate [C61],3708,14
+2002,Renal failure [N17-N19],3369,15
+2002,Malignant neoplasm of pancreas [C25],3202,16
+2002,Other diseases of circulatory system [I71-I78],2970,17
+2002,Motor vehicle accidents,2953,18
+2002,Non-Hodgkin's lymphoma [C82-C86],2530,19
+2002,Leukaemia [C91-C95],2077,20
+2002,Aortic aneurysm and dissection [I71],1919,21
+2002,Malignant neoplasm of stomach [C16],1904,22
+2002,Falls [W00-W19],1769,23
+2002,Parkinson's disease [G20-G21],1664,24
+2002,Malignant neoplasm of ovary [C56],1587,25
+2002,Malignant neoplasm of bladder [C67],1525,26
+2002,Sepsis [A40-A41],1489,27
+2002,Malignant neoplasm of oesophagus [C15],1473,28
+2002,Malignant neoplasm of liver and intrahepatic bile ducts [C22],1431,29
+2002,Malignant neoplasms of kidney and renal pelvis [C64-C65],1353,30
+2003,Major cardiovascular diseases [I00-I78],73827,1
+2003,Malignant neoplasms [C00-C97],65990,2
+2003,Ischaemic heart diseases [I20-I25],40608,3
+2003,Acute myocardial infarction [I21-I22],18662,4
+2003,Cerebrovascular diseases [I60-I69],15283,5
+2003,Other heart diseases [I26-I51],11148,6
+2003,Chronic lower respiratory diseases [J40-J47],10162,7
+2003,Diabetes mellitus [E10-E14],7970,8
+2003,Alzheimer's disease [G30],5504,9
+2003,Malignant neoplasm of breast [C50],5097,10
+2003,Influenza and pneumonia [J09-J18],4957,11
+2003,Pneumonia [J12-J18],4739,12
+2003,Heart failure [I50],4284,13
+2003,Malignant neoplasm of prostate [C61],3658,14
+2003,Malignant neoplasm of pancreas [C25],3441,15
+2003,Renal failure [N17-N19],3426,16
+2003,Other diseases of circulatory system [I71-I78],2976,17
+2003,Motor vehicle accidents,2866,18
+2003,Non-Hodgkin's lymphoma [C82-C86],2550,19
+2003,Leukaemia [C91-C95],2303,20
+2003,Falls [W00-W19],1978,21
+2003,Malignant neoplasm of stomach [C16],1944,22
+2003,Aortic aneurysm and dissection [I71],1870,23
+2003,Parkinson's disease [G20-G21],1679,24
+2003,Malignant neoplasm of bladder [C67],1586,25
+2003,Malignant neoplasm of ovary [C56],1573,26
+2003,Sepsis [A40-A41],1552,27
+2003,Malignant neoplasm of liver and intrahepatic bile ducts [C22],1501,28
+2003,Malignant neoplasm of oesophagus [C15],1413,29
+2003,Malignant neoplasms of kidney and renal pelvis [C64-C65],1384,30
+2004,Major cardiovascular diseases [I00-I78],72338,1
+2004,Malignant neoplasms [C00-C97],66947,2
+2004,Ischaemic heart diseases [I20-I25],39311,3
+2004,Acute myocardial infarction [I21-I22],18125,4
+2004,Cerebrovascular diseases [I60-I69],14626,5
+2004,Other heart diseases [I26-I51],11495,6
+2004,Chronic lower respiratory diseases [J40-J47],10041,7
+2004,Diabetes mellitus [E10-E14],7823,8
+2004,Influenza and pneumonia [J09-J18],5729,9
+2004,Alzheimer's disease [G30],5536,10
+2004,Pneumonia [J12-J18],5433,11
+2004,Malignant neoplasm of breast [C50],4998,12
+2004,Heart failure [I50],4430,13
+2004,Malignant neoplasm of prostate [C61],3685,14
+2004,Malignant neoplasm of pancreas [C25],3577,15
+2004,Renal failure [N17-N19],3475,16
+2004,Other diseases of circulatory system [I71-I78],2902,17
+2004,Motor vehicle accidents,2834,18
+2004,Non-Hodgkin's lymphoma [C82-C86],2650,19
+2004,Leukaemia [C91-C95],2256,20
+2004,Falls [W00-W19],2229,21
+2004,Malignant neoplasm of stomach [C16],1919,22
+2004,Aortic aneurysm and dissection [I71],1861,23
+2004,Parkinson's disease [G20-G21],1657,24
+2004,Malignant neoplasm of bladder [C67],1634,25
+2004,Sepsis [A40-A41],1608,26
+2004,Malignant neoplasm of ovary [C56],1590,27
+2004,Malignant neoplasm of liver and intrahepatic bile ducts [C22],1510,28
+2004,Malignant neoplasm of oesophagus [C15],1488,29
+2004,Malignant neoplasms of kidney and renal pelvis [C64-C65],1486,30
+2005,Major cardiovascular diseases [I00-I78],71338,1
+2005,Malignant neoplasms [C00-C97],67343,2
+2005,Ischaemic heart diseases [I20-I25],38480,3
+2005,Acute myocardial infarction [I21-I22],17425,4
+2005,Cerebrovascular diseases [I60-I69],14054,5
+2005,Other heart diseases [I26-I51],11881,6
+2005,Chronic lower respiratory diseases [J40-J47],10515,7
+2005,Diabetes mellitus [E10-E14],7881,8
+2005,Influenza and pneumonia [J09-J18],5845,9
+2005,Alzheimer's disease [G30],5762,10
+2005,Pneumonia [J12-J18],5167,11
+2005,Malignant neoplasm of breast [C50],5045,12
+2005,Heart failure [I50],4495,13
+2005,Malignant neoplasm of prostate [C61],3586,14
+2005,Renal failure [N17-N19],3574,15
+2005,Malignant neoplasm of pancreas [C25],3459,16
+2005,Motor vehicle accidents,3022,17
+2005,Other diseases of circulatory system [I71-I78],2948,18
+2005,Non-Hodgkin's lymphoma [C82-C86],2492,19
+2005,Falls [W00-W19],2305,20
+2005,Leukaemia [C91-C95],2255,21
+2005,Malignant neoplasm of stomach [C16],1967,22
+2005,Aortic aneurysm and dissection [I71],1902,23
+2005,Parkinson's disease [G20-G21],1890,24
+2005,Sepsis [A40-A41],1690,25
+2005,Malignant neoplasm of liver and intrahepatic bile ducts [C22],1686,26
+2005,Malignant neoplasm of bladder [C67],1626,27
+2005,Malignant neoplasm of ovary [C56],1577,28
+2005,Malignant neoplasm of oesophagus [C15],1518,29
+2005,Malignant neoplasms of kidney and renal pelvis [C64-C65],1470,30
+2006,Major cardiovascular diseases [I00-I78],68715,1
+2006,Malignant neoplasms [C00-C97],67807,2
+2006,Ischaemic heart diseases [I20-I25],36966,3
+2006,Acute myocardial infarction [I21-I22],16109,4
+2006,Cerebrovascular diseases [I60-I69],13805,5
+2006,Other heart diseases [I26-I51],11690,6
+2006,Chronic lower respiratory diseases [J40-J47],9786,7
+2006,Diabetes mellitus [E10-E14],7261,8
+2006,Alzheimer's disease [G30],5675,9
+2006,Influenza and pneumonia [J09-J18],5152,10
+2006,Pneumonia [J12-J18],5011,11
+2006,Malignant neoplasm of breast [C50],4897,12
+2006,Heart failure [I50],4495,13
+2006,Malignant neoplasm of pancreas [C25],3612,14
+2006,Renal failure [N17-N19],3608,15
+2006,Malignant neoplasm of prostate [C61],3564,16
+2006,Motor vehicle accidents,2926,17
+2006,Other diseases of circulatory system [I71-I78],2773,18
+2006,Falls [W00-W19],2580,19
+2006,Non-Hodgkin's lymphoma [C82-C86],2478,20
+2006,Leukaemia [C91-C95],2281,21
+2006,Malignant neoplasm of stomach [C16],1976,22
+2006,Sepsis [A40-A41],1852,23
+2006,Aortic aneurysm and dissection [I71],1791,24
+2006,Malignant neoplasm of bladder [C67],1729,25
+2006,Malignant neoplasm of liver and intrahepatic bile ducts [C22],1697,26
+2006,Parkinson's disease [G20-G21],1686,27
+2006,Malignant neoplasm of ovary [C56],1569,28
+2006,Malignant neoplasm of oesophagus [C15],1560,29
+2006,Pneumonitis due to solids and liquids [J69],1465,30
+2007,Malignant neoplasms [C00-C97],69595,1
+2007,Major cardiovascular diseases [I00-I78],69503,2
+2007,Ischaemic heart diseases [I20-I25],36860,3
+2007,Acute myocardial infarction [I21-I22],15627,4
+2007,Cerebrovascular diseases [I60-I69],13981,5
+2007,Other heart diseases [I26-I51],12387,6
+2007,Chronic lower respiratory diseases [J40-J47],10659,7
+2007,Diabetes mellitus [E10-E14],7394,8
+2007,Alzheimer's disease [G30],5903,9
+2007,Influenza and pneumonia [J09-J18],5452,10
+2007,Pneumonia [J12-J18],5272,11
+2007,Malignant neoplasm of breast [C50],5105,12
+2007,Heart failure [I50],4398,13
+2007,Malignant neoplasm of pancreas [C25],3785,14
+2007,Renal failure [N17-N19],3664,15
+2007,Malignant neoplasm of prostate [C61],3632,16
+2007,Motor vehicle accidents,2882,17
+2007,Other diseases of circulatory system [I71-I78],2818,18
+2007,Falls [W00-W19],2677,19
+2007,Non-Hodgkin's lymphoma [C82-C86],2652,20
+2007,Leukaemia [C91-C95],2300,21
+2007,Sepsis [A40-A41],1972,22
+2007,Parkinson's disease [G20-G21],1890,23
+2007,Malignant neoplasm of stomach [C16],1871,24
+2007,Malignant neoplasm of liver and intrahepatic bile ducts [C22],1822,25
+2007,Malignant neoplasm of bladder [C67],1798,26
+2007,Aortic aneurysm and dissection [I71],1787,27
+2007,Malignant neoplasm of oesophagus [C15],1627,28
+2007,Pneumonitis due to solids and liquids [J69],1614,29
+2007,Malignant neoplasm of ovary [C56],1544,30
+2008,Malignant neoplasms [C00-C97],70558,1
+2008,Major cardiovascular diseases [I00-I78],69648,2
+2008,Ischaemic heart diseases [I20-I25],36934,3
+2008,Acute myocardial infarction [I21-I22],15929,4
+2008,Cerebrovascular diseases [I60-I69],13870,5
+2008,Other heart diseases [I26-I51],12528,6
+2008,Chronic lower respiratory diseases [J40-J47],10923,7
+2008,Diabetes mellitus [E10-E14],7521,8
+2008,Alzheimer's disease [G30],6573,9
+2008,Influenza and pneumonia [J09-J18],5386,10
+2008,Pneumonia [J12-J18],5114,11
+2008,Malignant neoplasm of breast [C50],5006,12
+2008,Heart failure [I50],4476,13
+2008,Malignant neoplasm of pancreas [C25],3800,14
+2008,Malignant neoplasm of prostate [C61],3720,15
+2008,Renal failure [N17-N19],3702,16
+2008,Falls [W00-W19],3098,17
+2008,Other diseases of circulatory system [I71-I78],2653,18
+2008,Motor vehicle accidents,2628,19
+2008,Non-Hodgkin's lymphoma [C82-C86],2555,20
+2008,Leukaemia [C91-C95],2395,21
+2008,Sepsis [A40-A41],2135,22
+2008,Malignant neoplasm of stomach [C16],1949,23
+2008,Malignant neoplasm of liver and intrahepatic bile ducts [C22],1898,24
+2008,Malignant neoplasm of bladder [C67],1872,25
+2008,Parkinson's disease [G20-G21],1869,26
+2008,Malignant neoplasm of oesophagus [C15],1732,27
+2008,Malignant neoplasms of kidney and renal pelvis [C64-C65],1680,28
+2008,Aortic aneurysm and dissection [I71],1668,29
+2008,Malignant neoplasm of ovary [C56],1641,30
+2009,Malignant neoplasms [C00-C97],71125,1
+2009,Major cardiovascular diseases [I00-I78],68342,2
+2009,Ischaemic heart diseases [I20-I25],35896,3
+2009,Acute myocardial infarction [I21-I22],15111,4
+2009,Cerebrovascular diseases [I60-I69],14105,5
+2009,Other heart diseases [I26-I51],12088,6
+2009,Chronic lower respiratory diseases [J40-J47],10859,7
+2009,Diabetes mellitus [E10-E14],6923,8
+2009,Alzheimer's disease [G30],6281,9
+2009,Influenza and pneumonia [J09-J18],5826,10
+2009,Pneumonia [J12-J18],5296,11
+2009,Malignant neoplasm of breast [C50],4990,12
+2009,Heart failure [I50],4211,13
+2009,Malignant neoplasm of pancreas [C25],3981,14
+2009,Malignant neoplasm of prostate [C61],3745,15
+2009,Falls [W00-W19],3602,16
+2009,Renal failure [N17-N19],3438,17
+2009,Non-Hodgkin's lymphoma [C82-C86],2597,18
+2009,Other diseases of circulatory system [I71-I78],2566,19
+2009,Leukaemia [C91-C95],2463,20
+2009,Motor vehicle accidents,2406,21
+2009,Sepsis [A40-A41],2211,22
+2009,Malignant neoplasm of liver and intrahepatic bile ducts [C22],1950,23
+2009,Malignant neoplasm of stomach [C16],1911,24
+2009,Malignant neoplasm of bladder [C67],1910,25
+2009,Parkinson's disease [G20-G21],1901,26
+2009,Pneumonitis due to solids and liquids [J69],1710,27
+2009,Malignant neoplasm of oesophagus [C15],1685,28
+2009,Malignant neoplasm of ovary [C56],1597,29
+2009,Aortic aneurysm and dissection [I71],1564,30
+2010,Malignant neoplasms [C00-C97],71882,1
+2010,Major cardiovascular diseases [I00-I78],67383,2
+2010,Ischaemic heart diseases [I20-I25],34936,3
+2010,Acute myocardial infarction [I21-I22],14831,4
+2010,Cerebrovascular diseases [I60-I69],13706,5
+2010,Other heart diseases [I26-I51],12541,6
+2010,Chronic lower respiratory diseases [J40-J47],10757,7
+2010,Diabetes mellitus [E10-E14],6942,8
+2010,Alzheimer's disease [G30],6452,9
+2010,Influenza and pneumonia [J09-J18],5106,10
+2010,Malignant neoplasm of breast [C50],5024,11
+2010,Pneumonia [J12-J18],5023,12
+2010,Heart failure [I50],4287,13
+2010,Falls [W00-W19],4071,14
+2010,Malignant neoplasm of pancreas [C25],3873,15
+2010,Malignant neoplasm of prostate [C61],3833,16
+2010,Renal failure [N17-N19],3646,17
+2010,Non-Hodgkin's lymphoma [C82-C86],2506,18
+2010,Other diseases of circulatory system [I71-I78],2505,19
+2010,Motor vehicle accidents,2450,20
+2010,Leukaemia [C91-C95],2372,21
+2010,Sepsis [A40-A41],2257,22
+2010,Malignant neoplasm of liver and intrahepatic bile ducts [C22],2099,23
+2010,Parkinson's disease [G20-G21],2015,24
+2010,Pneumonitis due to solids and liquids [J69],1959,25
+2010,Malignant neoplasm of bladder [C67],1955,26
+2010,Malignant neoplasm of stomach [C16],1883,27
+2010,Malignant neoplasm of oesophagus [C15],1797,28
+2010,Malignant neoplasm of ovary [C56],1637,29
+2010,Malignant neoplasms of kidney and renal pelvis [C64-C65],1585,30
+2011,Malignant neoplasms [C00-C97],72736,1
+2011,Major cardiovascular diseases [I00-I78],66179,2
+2011,Ischaemic heart diseases [I20-I25],33771,3
+2011,Acute myocardial infarction [I21-I22],14016,4
+2011,Cerebrovascular diseases [I60-I69],13332,5
+2011,Other heart diseases [I26-I51],12748,6
+2011,Chronic lower respiratory diseases [J40-J47],11243,7
+2011,Diabetes mellitus [E10-E14],7255,8
+2011,Alzheimer's disease [G30],6377,9
+2011,Influenza and pneumonia [J09-J18],5787,10
+2011,Pneumonia [J12-J18],5306,11
+2011,Malignant neoplasm of breast [C50],5014,12
+2011,Heart failure [I50],4347,13
+2011,Falls [W00-W19],4263,14
+2011,Malignant neoplasm of pancreas [C25],4099,15
+2011,Malignant neoplasm of prostate [C61],3721,16
+2011,Renal failure [N17-N19],3214,17
+2011,Non-Hodgkin's lymphoma [C82-C86],2578,18
+2011,Other diseases of circulatory system [I71-I78],2557,19
+2011,Leukaemia [C91-C95],2520,20
+2011,Sepsis [A40-A41],2465,21
+2011,Malignant neoplasm of liver and intrahepatic bile ducts [C22],2281,22
+2011,Motor vehicle accidents,2254,23
+2011,Parkinson's disease [G20-G21],2019,24
+2011,Pneumonitis due to solids and liquids [J69],2009,25
+2011,Malignant neoplasm of bladder [C67],1958,26
+2011,Malignant neoplasm of stomach [C16],1924,27
+2011,Malignant neoplasm of oesophagus [C15],1748,28
+2011,Malignant neoplasm of ovary [C56],1697,29
+2011,Accidental poisoning and exposure to noxious substances [X40-X49],1681,30
+2012,Malignant neoplasms [C00-C97],74361,1
+2012,Major cardiovascular diseases [I00-I78],66598,2
+2012,Ischaemic heart diseases [I20-I25],33873,3
+2012,Acute myocardial infarction [I21-I22],14233,4
+2012,Other heart diseases [I26-I51],13324,5
+2012,Cerebrovascular diseases [I60-I69],13174,6
+2012,Chronic lower respiratory diseases [J40-J47],11130,7
+2012,Diabetes mellitus [E10-E14],6993,8
+2012,Alzheimer's disease [G30],6293,9
+2012,Influenza and pneumonia [J09-J18],5694,10
+2012,Pneumonia [J12-J18],5287,11
+2012,Malignant neoplasm of breast [C50],5019,12
+2012,Heart failure [I50],4499,13
+2012,Falls [W00-W19],4495,14
+2012,Malignant neoplasm of pancreas [C25],4268,15
+2012,Malignant neoplasm of prostate [C61],3708,16
+2012,Renal failure [N17-N19],3227,17
+2012,Non-Hodgkin's lymphoma [C82-C86],2647,18
+2012,Leukaemia [C91-C95],2642,19
+2012,Sepsis [A40-A41],2611,20
+2012,Malignant neoplasm of liver and intrahepatic bile ducts [C22],2528,21
+2012,Other diseases of circulatory system [I71-I78],2470,22
+2012,Motor vehicle accidents,2309,23
+2012,Parkinson's disease [G20-G21],2172,24
+2012,Pneumonitis due to solids and liquids [J69],2013,25
+2012,Malignant neoplasm of bladder [C67],2010,26
+2012,Malignant neoplasm of stomach [C16],1863,27
+2012,Malignant neoplasm of oesophagus [C15],1824,28
+2012,Accidental poisoning and exposure to noxious substances [X40-X49],1777,29
+2012,Malignant neoplasms of kidney and renal pelvis [C64-C65],1676,30
+2013,Malignant neoplasms [C00-C97],75112,1
+2013,Major cardiovascular diseases [I00-I78],68064,2
+2013,Ischaemic heart diseases [I20-I25],33884,3
+2013,Acute myocardial infarction [I21-I22],14049,4
+2013,Other heart diseases [I26-I51],13750,5
+2013,Cerebrovascular diseases [I60-I69],13400,6
+2013,Chronic lower respiratory diseases [J40-J47],11976,7
+2013,Diabetes mellitus [E10-E14],7045,8
+2013,Influenza and pneumonia [J09-J18],6551,9
+2013,Alzheimer's disease [G30],6345,10
+2013,Pneumonia [J12-J18],5644,11
+2013,Malignant neoplasm of breast [C50],5053,12
+2013,Falls [W00-W19],4670,13
+2013,Malignant neoplasm of pancreas [C25],4551,14
+2013,Heart failure [I50],4537,15
+2013,Malignant neoplasm of prostate [C61],3947,16
+2013,Renal failure [N17-N19],2872,17
+2013,Leukaemia [C91-C95],2714,18
+2013,Malignant neoplasm of liver and intrahepatic bile ducts [C22],2703,19
+2013,Non-Hodgkin's lymphoma [C82-C86],2687,20
+2013,Other diseases of circulatory system [I71-I78],2541,21
+2013,Parkinson's disease [G20-G21],2354,22
+2013,Sepsis [A40-A41],2289,23
+2013,Motor vehicle accidents,2172,24
+2013,Malignant neoplasm of bladder [C67],2090,25
+2013,Malignant neoplasm of stomach [C16],1933,26
+2013,Malignant neoplasm of oesophagus [C15],1905,27
+2013,Accidental poisoning and exposure to noxious substances [X40-X49],1828,28
+2013,Malignant neoplasms of kidney and renal pelvis [C64-C65],1761,29
+2013,Malignant neoplasm of ovary [C56],1733,30
+2014,Malignant neoplasms [C00-C97],77059,1
+2014,Major cardiovascular diseases [I00-I78],69260,2
+2014,Ischaemic heart diseases [I20-I25],34014,3
+2014,Other heart diseases [I26-I51],14513,4
+2014,Acute myocardial infarction [I21-I22],14035,5
+2014,Cerebrovascular diseases [I60-I69],13573,6
+2014,Chronic lower respiratory diseases [J40-J47],11876,7
+2014,Diabetes mellitus [E10-E14],7071,8
+2014,Influenza and pneumonia [J09-J18],6597,9
+2014,Alzheimer's disease [G30],6410,10
+2014,Pneumonia [J12-J18],5664,11
+2014,Malignant neoplasm of breast [C50],5180,12
+2014,Falls [W00-W19],4879,13
+2014,Heart failure [I50],4735,14
+2014,Malignant neoplasm of pancreas [C25],4641,15
+2014,Malignant neoplasm of prostate [C61],4135,16
+2014,Renal failure [N17-N19],2982,17
+2014,Leukaemia [C91-C95],2783,18
+2014,Malignant neoplasm of liver and intrahepatic bile ducts [C22],2710,19
+2014,Non-Hodgkin's lymphoma [C82-C86],2688,20
+2014,Other diseases of circulatory system [I71-I78],2503,21
+2014,Parkinson's disease [G20-G21],2456,22
+2014,Sepsis [A40-A41],2359,23
+2014,Malignant neoplasm of bladder [C67],2217,24
+2014,Accidental poisoning and exposure to noxious substances [X40-X49],2069,25
+2014,Motor vehicle accidents,2024,26
+2014,Malignant neoplasm of oesophagus [C15],1958,27
+2014,Malignant neoplasm of stomach [C16],1930,28
+2014,Alcoholic liver disease [K70],1759,29
+2014,Malignant neoplasm of ovary [C56],1752,30
+2015,Malignant neoplasms [C00-C97],77054,1
+2015,Major cardiovascular diseases [I00-I78],70036,2
+2015,Ischaemic heart diseases [I20-I25],34031,3
+2015,Other heart diseases [I26-I51],15024,4
+2015,Acute myocardial infarction [I21-I22],13961,5
+2015,Cerebrovascular diseases [I60-I69],13795,6
+2015,Chronic lower respiratory diseases [J40-J47],12573,7
+2015,Influenza and pneumonia [J09-J18],7630,8
+2015,Diabetes mellitus [E10-E14],7172,9
+2015,Alzheimer's disease [G30],6587,10
+2015,Pneumonia [J12-J18],6011,11
+2015,Malignant neoplasm of breast [C50],5187,12
+2015,Heart failure [I50],4791,13
+2015,Malignant neoplasm of pancreas [C25],4760,14
+2015,Falls [W00-W19],4711,15
+2015,Malignant neoplasm of prostate [C61],4011,16
+2015,Renal failure [N17-N19],3032,17
+2015,Malignant neoplasm of liver and intrahepatic bile ducts [C22],2902,18
+2015,Non-Hodgkin's lymphoma [C82-C86],2833,19
+2015,Leukaemia [C91-C95],2646,20
+2015,Other diseases of circulatory system [I71-I78],2639,21
+2015,Parkinson's disease [G20-G21],2543,22
+2015,Sepsis [A40-A41],2487,23
+2015,Accidental poisoning and exposure to noxious substances [X40-X49],2355,24
+2015,Malignant neoplasm of bladder [C67],2130,25
+2015,Motor vehicle accidents,2066,26
+2015,Malignant neoplasm of oesophagus [C15],1956,27
+2015,Malignant neoplasm of ovary [C56],1915,28
+2015,Malignant neoplasm of stomach [C16],1896,29
+2015,Malignant neoplasms of kidney and renal pelvis [C64-C65],1788,30
+2016,Malignant neoplasms [C00-C97],79084,1
+2016,Major cardiovascular diseases [I00-I78],69576,2
+2016,Ischaemic heart diseases [I20-I25],32854,3
+2016,Other heart diseases [I26-I51],15875,4
+2016,Cerebrovascular diseases [I60-I69],13551,5
+2016,Acute myocardial infarction [I21-I22],13491,6
+2016,Chronic lower respiratory diseases [J40-J47],12293,7
+2016,Diabetes mellitus [E10-E14],6838,8
+2016,Alzheimer's disease [G30],6521,9
+2016,Influenza and pneumonia [J09-J18],6235,10
+2016,Pneumonia [J12-J18],5568,11
+2016,Malignant neoplasm of breast [C50],5351,12
+2016,Heart failure [I50],5127,13
+2016,Malignant neoplasm of pancreas [C25],4900,14
+2016,Falls [W00-W19],4681,15
+2016,Malignant neoplasm of prostate [C61],4242,16
+2016,Accidental poisoning and exposure to noxious substances [X40-X49],3117,17
+2016,Malignant neoplasm of liver and intrahepatic bile ducts [C22],2991,18
+2016,Renal failure [N17-N19],2950,19
+2016,Parkinson's disease [G20-G21],2825,20
+2016,Non-Hodgkin's lymphoma [C82-C86],2770,21
+2016,Leukaemia [C91-C95],2732,22
+2016,Other diseases of circulatory system [I71-I78],2547,23
+2016,Malignant neoplasm of bladder [C67],2301,24
+2016,Malignant neoplasm of stomach [C16],2026,25
+2016,Malignant neoplasm of oesophagus [C15],1987,26
+2016,Motor vehicle accidents,1951,27
+2016,Sepsis [A40-A41],1909,28
+2016,Alcoholic liver disease [K70],1838,29
+2016,Malignant neoplasm of ovary [C56],1764,30
+2017,Malignant neoplasms [C00-C97],80023,1
+2017,Major cardiovascular diseases [I00-I78],72203,2
+2017,Ischaemic heart diseases [I20-I25],33679,3
+2017,Unspecified dementia [F03],19436,4
+2017,Other heart diseases [I26-I51],17046,5
+2017,Cerebrovascular diseases [I60-I69],13934,6
+2017,Acute myocardial infarction [I21-I22],13431,7
+2017,Chronic lower respiratory diseases [J40-J47],12890,8
+2017,Influenza and pneumonia [J09-J18],7445,9
+2017,Diabetes mellitus [E10-E14],6938,10
+2017,Alzheimer's disease [G30],6683,11
+2017,Pneumonia [J12-J18],6167,12
+2017,Heart failure [I50],5674,13
+2017,Malignant neoplasm of breast [C50],5391,14
+2017,Falls [W00-W19],5224,15
+2017,Malignant neoplasm of pancreas [C25],5012,16
+2017,Accidental poisoning and exposure to noxious substances [X40-X49],4830,17
+2017,Malignant neoplasm of prostate [C61],4322,18
+2017,Renal failure [N17-N19],3180,19
+2017,Malignant neoplasm of liver and intrahepatic bile ducts [C22],3151,20
+2017,Parkinson's disease [G20-G21],3137,21
+2017,Non-Hodgkin's lymphoma [C82-C86],2970,22
+2017,Leukaemia [C91-C95],2886,23
+2017,Other diseases of circulatory system [I71-I78],2722,24
+2017,Malignant neoplasm of bladder [C67],2267,25
+2017,Malignant neoplasm of oesophagus [C15],2091,26
+2017,Sepsis [A40-A41],2044,27
+2017,Motor vehicle accidents,2008,28
+2017,Malignant neoplasm of stomach [C16],1944,29
+2017,Malignant neoplasm of ovary [C56],1874,30
+2018,Malignant neoplasms [C00-C97],79726,1
+2018,Major cardiovascular diseases [I00-I78],72507,2
+2018,Ischaemic heart diseases [I20-I25],33410,3
+2018,Unspecified dementia [F03],21192,4
+2018,Other heart diseases [I26-I51],17893,5
+2018,Cerebrovascular diseases [I60-I69],13547,6
+2018,Acute myocardial infarction [I21-I22],13142,7
+2018,Chronic lower respiratory diseases [J40-J47],13070,8
+2018,Influenza and pneumonia [J09-J18],8594,9
+2018,Diabetes mellitus [E10-E14],6864,10
+2018,Alzheimer's disease [G30],6439,11
+2018,Pneumonia [J12-J18],6281,12
+2018,Heart failure [I50],6175,13
+2018,Falls [W00-W19],5759,14
+2018,Malignant neoplasm of breast [C50],5334,15
+2018,Malignant neoplasm of pancreas [C25],5152,16
+2018,Accidental poisoning and exposure to noxious substances [X40-X49],4835,17
+2018,Malignant neoplasm of prostate [C61],4328,18
+2018,Renal failure [N17-N19],3498,19
+2018,Malignant neoplasm of liver and intrahepatic bile ducts [C22],3164,20
+2018,Parkinson's disease [G20-G21],3104,21
+2018,Non-Hodgkin's lymphoma [C82-C86],2892,22
+2018,Leukaemia [C91-C95],2821,23
+2018,Other diseases of circulatory system [I71-I78],2780,24
+2018,Malignant neoplasm of bladder [C67],2315,25
+2018,Influenza [J09-J11],2313,26
+2018,Sepsis [A40-A41],2195,27
+2018,Malignant neoplasm of oesophagus [C15],2167,28
+2018,Motor vehicle accidents,2085,29
+2018,Malignant neoplasm of stomach [C16],1991,30
+2019,Malignant neoplasms [C00-C97],80372,1
+2019,Major cardiovascular diseases [I00-I78],72035,2
+2019,Ischaemic heart diseases [I20-I25],32458,3
+2019,Unspecified dementia [F03],21929,4
+2019,Other heart diseases [I26-I51],17943,5
+2019,Cerebrovascular diseases [I60-I69],13717,6
+2019,Acute myocardial infarction [I21-I22],12918,7
+2019,Chronic lower respiratory diseases [J40-J47],12902,8
+2019,Diabetes mellitus [E10-E14],6987,9
+2019,Influenza and pneumonia [J09-J18],6945,10
+2019,Heart failure [I50],6328,11
+2019,Falls [W00-W19],6302,12
+2019,Alzheimer's disease [G30],6181,13
+2019,Pneumonia [J12-J18],5878,14
+2019,Malignant neoplasm of breast [C50],5319,15
+2019,Malignant neoplasm of pancreas [C25],5224,16
+2019,Malignant neoplasm of prostate [C61],4524,17
+2019,Accidental poisoning and exposure to noxious substances [X40-X49],4220,18
+2019,Renal failure [N17-N19],3673,19
+2019,Malignant neoplasm of liver and intrahepatic bile ducts [C22],3242,20
+2019,Parkinson's disease [G20-G21],3155,21
+2019,Non-Hodgkin's lymphoma [C82-C86],2865,22
+2019,Other diseases of circulatory system [I71-I78],2835,23
+2019,Leukaemia [C91-C95],2762,24
+2019,Malignant neoplasm of bladder [C67],2221,25
+2019,Malignant neoplasm of oesophagus [C15],2208,26
+2019,Sepsis [A40-A41],2139,27
+2019,Vascular dementia [F010-F019],2049,28
+2019,Malignant neoplasm of stomach [C16],1994,29
+2019,Motor vehicle accidents,1891,30
+2020,Malignant neoplasms [C00-C97],81242,1
+2020,Major cardiovascular diseases [I00-I78],73521,2
+2020,Ischaemic heart diseases [I20-I25],33676,3
+2020,Unspecified dementia [F03],21676,4
+2020,Other heart diseases [I26-I51],17452,5
+2020,Cerebrovascular diseases [I60-I69],13761,6
+2020,Acute myocardial infarction [I21-I22],12438,7
+2020,Chronic lower respiratory diseases [J40-J47],11844,8
+2020,Diabetes mellitus [E10-E14],7654,9
+2020,Falls [W00-W19],6656,10
+2020,Influenza and pneumonia [J09-J18],6037,11
+2020,Heart failure [I50],5902,12
+2020,Alzheimer's disease [G30],5788,13
+2020,Malignant neoplasm of pancreas [C25],5451,14
+2020,Accidental poisoning and exposure to noxious substances [X40-X49],5358,15
+2020,Malignant neoplasm of breast [C50],5272,16
+2020,Pneumonia [J12-J18],5240,17
+2020,Malignant neoplasm of prostate [C61],4602,18
+2020,Renal failure [N17-N19],3950,19
+2020,Parkinson's disease [G20-G21],3458,20
+2020,Malignant neoplasm of liver and intrahepatic bile ducts [C22],3401,21
+2020,Non-Hodgkin's lymphoma [C82-C86],3089,22
+2020,Leukaemia [C91-C95],2843,23
+2020,Other diseases of circulatory system [I71-I78],2828,24
+2020,Malignant neoplasm of bladder [C67],2288,25
+2020,Alcoholic liver disease [K70],2276,26
+2020,Sepsis [A40-A41],2246,27
+2020,Malignant neoplasm of oesophagus [C15],2207,28
+2020,Hypertensive heart disease [I11],2098,29
+2020,Malignant neoplasm of stomach [C16],1989,30
+2021,Malignant neoplasms [C00-C97],82822,1
+2021,Major cardiovascular diseases [I00-I78],74018,2
+2021,Ischaemic heart diseases [I20-I25],33882,3
+2021,Unspecified dementia [F03],21556,4
+2021,Other heart diseases [I26-I51],17917,5
+2021,Cerebrovascular diseases [I60-I69],13491,6
+2021,Acute myocardial infarction [I21-I22],12359,7
+2021,Chronic lower respiratory diseases [J40-J47],11018,8
+2021,Diabetes mellitus [E10-E14],7472,9
+2021,Accidental poisoning and exposure to noxious substances [X40-X49],7066,10
+2021,Falls [W00-W19],7055,11
+2021,Heart failure [I50],5995,12
+2021,Malignant neoplasm of pancreas [C25],5770,13
+2021,Alzheimer's disease [G30],5471,14
+2021,Malignant neoplasm of breast [C50],5405,15
+2021,Malignant neoplasm of prostate [C61],4793,16
+2021,Influenza and pneumonia [J09-J18],4115,17
+2021,Pneumonia [J12-J18],4095,18
+2021,Renal failure [N17-N19],3835,19
+2021,Malignant neoplasm of liver and intrahepatic bile ducts [C22],3534,20
+2021,Parkinson's disease [G20-G21],3489,21
+2021,Non-Hodgkin's lymphoma [C82-C86],2969,22
+2021,Leukaemia [C91-C95],2832,23
+2021,Other diseases of circulatory system [I71-I78],2805,24
+2021,Alcoholic liver disease [K70],2469,25
+2021,Malignant neoplasm of oesophagus [C15],2285,26
+2021,Malignant neoplasm of bladder [C67],2248,27
+2021,Other chronic liver disease and cirrhosis [K73-K74],2148,28
+2021,Hypertensive heart disease [I11],2143,29
+2021,Sepsis [A40-A41],2064,30
+2022,Malignant neoplasms [C00-C97],82412,1
+2022,Major cardiovascular diseases [I00-I78],76639,2
+2022,Ischaemic heart diseases [I20-I25],34830,3
+2022,Unspecified dementia [F03],23896,4
+2022,Other heart diseases [I26-I51],18913,5
+2022,Cerebrovascular diseases [I60-I69],13915,6
+2022,Acute myocardial infarction [I21-I22],12606,7
+2022,Chronic lower respiratory diseases [J40-J47],12462,8
+2022,Falls [W00-W19],7603,9
+2022,Diabetes mellitus [E10-E14],7557,10
+2022,Heart failure [I50],6617,11
+2022,Influenza and pneumonia [J09-J18],5985,12
+2022,Accidental poisoning and exposure to noxious substances [X40-X49],5882,13
+2022,Malignant neoplasm of pancreas [C25],5815,14
+2022,Malignant neoplasm of breast [C50],5427,15
+2022,Alzheimer's disease [G30],5413,16
+2022,Pneumonia [J12-J18],5093,17
+2022,Malignant neoplasm of prostate [C61],4708,18
+2022,Renal failure [N17-N19],4110,19
+2022,Parkinson's disease [G20-G21],3617,20
+2022,Malignant neoplasm of liver and intrahepatic bile ducts [C22],3436,21
+2022,Non-Hodgkin's lymphoma [C82-C86],3025,22
+2022,Leukaemia [C91-C95],2850,23
+2022,Other diseases of circulatory system [I71-I78],2822,24
+2022,Other chronic liver disease and cirrhosis [K73-K74],2295,25
+2022,Hypertensive heart disease [I11],2277,26
+2022,Malignant neoplasm of bladder [C67],2249,27
+2022,Alcoholic liver disease [K70],2235,28
+2022,Sepsis [A40-A41],2183,29
+2022,Malignant neoplasm of oesophagus [C15],2153,30

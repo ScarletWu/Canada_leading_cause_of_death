@@ -124,13 +124,29 @@ cause_of_death_poisson <-
 
 cause_of_death_neg_binomial <-
   stan_glm(
-    total_deaths ~ cause_of_death_icd_10,
+    value ~ cause_of_death_icd_10,
     data = data,
     family = neg_binomial_2(link = "log"),
     seed = 853
   )
 ```
 
+```{r}
+#| echo: false
+#| eval: false
+
+# INTERNAL
+
+saveRDS(
+  cause_of_death_poisson,
+  file = "/cloud/project/outputs/model/cause_of_death_poisson.rds"
+)
+
+saveRDS(
+  cause_of_death_neg_binomial,
+  file = "/cloud/project/outputs/model/cause_of_death_neg_binomial.rds"
+)
+```
 
 
 

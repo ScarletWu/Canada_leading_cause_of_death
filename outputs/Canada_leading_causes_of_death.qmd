@@ -13,6 +13,7 @@ library(stringr)
 library(ggplot2)
 library(modelsummary)
 library(rstanarm)
+library(devtools)
 ```
 
 ```{r}
@@ -146,6 +147,20 @@ saveRDS(
   cause_of_death_neg_binomial,
   file = "/cloud/project/outputs/model/cause_of_death_neg_binomial.rds"
 )
+```
+
+
+```{r}
+#| label: tbl-3
+#| tbl-cap: "Modeling the most prevalent cause of deaths in Canada, 2001-2020"
+summary(cause_of_death_poisson)
+summary(cause_of_death_neg_binomial)
+
+modelsummary(
+  list(
+    "Poisson" = cause_of_death_poisson,
+    "Negative binomial" = cause_of_death_neg_binomial
+  ))
 ```
 
 

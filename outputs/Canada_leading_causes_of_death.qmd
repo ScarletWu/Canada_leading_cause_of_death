@@ -8,12 +8,17 @@ editor: visual
 ```{r}
 #| message: false
 #| eacho: false
+
+library(dplyr)
+library(tibble)
 library(knitr)
 library(stringr)
 library(ggplot2)
 library(modelsummary)
 library(rstanarm)
 library(devtools)
+library(readr)
+
 ```
 
 ```{r}
@@ -152,9 +157,11 @@ saveRDS(
 
 ```{r}
 #| label: tbl-3
+#| warning: false
 #| tbl-cap: "Modeling the most prevalent cause of deaths in Canada, 2001-2020"
 summary(cause_of_death_poisson)
 summary(cause_of_death_neg_binomial)
+
 
 modelsummary(
   list(

@@ -163,6 +163,37 @@ modelsummary(
   ))
 ```
 
+```{r}
+#| echo: true
+#| eval: true
+#| message: false
+#| warning: false
+#| label: fig-3
+#| layout-ncol: 2
+#| fig-cap: "Comparing posterior prediction checks for Poisson and negative binomial models"
+#| fig-subcap: ["Poisson model", "Negative binomial model"]
+
+pp_check(cause_of_death_poisson) +
+  theme(legend.position = "bottom")
+
+pp_check(cause_of_death_neg_binomial) +
+  theme(legend.position = "bottom")
+```
+
+```{r}
+#| message: false
+#| warning: false
+
+poisson <- loo(cause_of_death_poisson, cores = 2)
+neg_binomial <- loo(cause_of_death_neg_binomial, cores = 2)
+
+loo_compare(poisson, neg_binomial)
+```
+
+
+
+
+
 
 
 

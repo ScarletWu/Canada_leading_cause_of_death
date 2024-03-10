@@ -1,0 +1,137 @@
+---
+title: "Canada_leading_causes_of_death"
+author: "Scarlet Ruoxian Wu"
+format: pdf
+editor: visual
+---
+
+```{r}
+#| message: false
+#| eacho: false
+library(knitr)
+library(stringr)
+library(ggplot2)
+library(modelsummary)
+library(rstanarm)
+```
+
+```{r}
+
+death_simulation <- 
+  tibble(
+    cause = rep(x = c("Malignant neoplasms", "cardiovascular diseases", "Ischaemic heart diseases"), each = 23),
+  year = rep(x = 2000:2022, times = 3),
+  deaths = rnbinom(n = 69, size = 20, prob = 0.1)
+)
+
+death_simulation
+```
+
+:::
+
+```{r}
+#| message: false
+#| echo: false
+
+data_path <- "/cloud/project/data/cleaned/cleaned_top_30.csv"
+
+data <- read_csv(data_path) %>%
+  add_count(cause_of_death_icd_10) %>%
+  mutate(cause_of_death_icd_10 = str_trunc(cause_of_death_icd_10, 30))
+
+```
+
+:::
+
+```{r}
+#| label: tbl-1
+#| tbl-cap: "Top-ten causes of death in Canada in 2022"
+#| warning: false
+
+top_10 <-
+  data |>
+    filter(
+      ref_date == 2022,
+      rank <= 10)
+      
+
+top_10 |>
+  kable(
+      col.names = c("Year", "Cause", "Deaths", "Rank", "Years"),
+      align = c("l", "r", "r", "r", "r"),
+      digits = 0, booktabs = TRUE, linesep = ""
+    )
+```
+
+
+
+
+
+```{r}
+
+top_five <-
+  data |>
+  filter(
+    ref_date == 2022,
+    !str_detect(cause_of_death_icd_10, "Other"),
+    str_detect(cause_of_death_icd_10, "-")
+          ) |>
+        slice_max(order_by = desc(rank), n = 5) |>
+        pull(cause_of_death_icd_10)
+
+
+top_5 <-
+  data |>
+  filter(cause_of_death_icd_10 %in% top_five)
+
+
+top_5 |>
+  ggplot(aes(x = ref_date, y = value, color = cause_of_death_icd_10)) +
+  geom_line() +
+  theme_minimal() +
+  scale_color_brewer(palette = "Set1") +
+  labs(x = "Year", y = "Annual number of deaths in Canada") +
+  facet_wrap(~cause_of_death_icd_10, dir = "v", ncol = 1) +
+  theme(legend.position = "none")
+
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| label: tbl-2
+#| tbl-cap: "Summary statistics of the number of yearly deaths, by cause, in Canada"
+
+datasummary(
+  value ~ Min + Mean + Max + SD + Var + N,
+  fmt = 0,
+  data = data
+)
+```
+```{r}
+#| echo: true
+#| eval: false
+#| message: false
+#| warning: false
+
+cause_of_death_poisson <-
+  stan_glm(
+    value ~ cause_of_death_icd_10,
+    data = data,
+    family = poisson(link = "log"),
+    seed = 853
+  )
+
+cause_of_death_neg_binomial <-
+  stan_glm(
+    total_deaths ~ cause_of_death_icd_10,
+    data = data,
+    family = neg_binomial_2(link = "log"),
+    seed = 853
+  )
+```
+
+
+
+
+

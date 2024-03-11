@@ -167,8 +167,6 @@ poisson_summary <- summary(cause_of_death_poisson)
 neg_binomial_summary <- summary(cause_of_death_neg_binomial)
 
 
-
-
 tidy_poisson <- tidy(cause_of_death_poisson)
 tidy_neg_binomial <- tidy(cause_of_death_neg_binomial)
 

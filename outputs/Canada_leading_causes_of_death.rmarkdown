@@ -78,7 +78,14 @@ top_10 |>
     )
 ```
 
-```{r}
+```{r, fig.width=10, fig.height=8}
+#| eval: true
+#| message: false
+#| warning: false
+#| label: fig-1
+#| layout-ncol: 2
+#| fig-cap: "  "
+
 
 top_nine <-
   data |>
@@ -100,22 +107,14 @@ top_9 |>
   theme_minimal() +
   scale_color_brewer(palette = "Set1") +
   labs(x = "Year", y = "Annual number of deaths in Canada") +
-  facet_wrap(~cause_of_death_icd_10, dir = "v", ncol = 1) +
-  theme(legend.position = "none")
-
-
-top_9 |>
-  ggplot(aes(x = ref_date, y = value, color = cause_of_death_icd_10)) +
-  geom_line() +
-  theme_minimal() +
-  scale_color_brewer(palette = "Set1") +
-  labs(x = "Year", y = "Annual number of deaths in Canada") +
   facet_wrap(~cause_of_death_icd_10, dir = "v", ncol = 1, scales = "free_y") +
   theme(legend.position = "none") +
   scale_y_continuous(
     labels = scales::comma,  # This formats the labels with commas for thousands
     breaks = scales::pretty_breaks(n = 5)  # This creates 5 evenly spaced breaks
   )
+
+ggsave("leading_ning_plot.png", plot = last_plot(), width = 10, height = 8, units = "in")
 
 ```
 

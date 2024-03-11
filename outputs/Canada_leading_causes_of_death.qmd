@@ -83,7 +83,14 @@ top_10 |>
 
 
 
-```{r}
+```{r, fig.width=10, fig.height=8}
+#| eval: true
+#| message: false
+#| warning: false
+#| label: fig-1
+#| layout-ncol: 2
+#| fig-cap: "  "
+
 
 top_nine <-
   data |>
@@ -98,15 +105,20 @@ top_9 <-
   data |>
   filter(cause_of_death_icd_10 %in% top_nine)
 
+short_names <- 
+  c("Malignant neoplasms [C00-C97]" = "Malignant Neoplasms",
+    "Diseases of heart [I00-I09,..." = "Diseases of Heart",
+    "Malignant neoplasms of trac..." = "Respiratory Malignant Neoplasms",
+    "Dementia [F010-F019, F03]" = "Dementia",
+    "COVID-19 [U07.1, U07.2, U10.9]" = "COVID-19",
+    "Major cardiovascular diseas..." = "Major Cardiovascular Diseases",
+    "Ischaemic heart diseases [I..." = "Ischaemic Heart Diseases",
+    "Unspecified dementia [F03]" = "Unspecified Dementia",
+    "Other forms of chronic isch..." = "Other Chronic Ischaemic Heart Diseases"
+  )
 
-top_9 |>
-  ggplot(aes(x = ref_date, y = value, color = cause_of_death_icd_10)) +
-  geom_line() +
-  theme_minimal() +
-  scale_color_brewer(palette = "Set1") +
-  labs(x = "Year", y = "Annual number of deaths in Canada") +
-  facet_wrap(~cause_of_death_icd_10, dir = "v", ncol = 1) +
-  theme(legend.position = "none")
+top_9 <- top_9 %>%
+  mutate(cause_of_death_icd_10 = recode(cause_of_death_icd_10, !!!short_names))
 
 
 top_9 |>
@@ -121,6 +133,8 @@ top_9 |>
     labels = scales::comma,  # This formats the labels with commas for thousands
     breaks = scales::pretty_breaks(n = 5)  # This creates 5 evenly spaced breaks
   )
+
+ggsave("leading_ning_plot.png", plot = last_plot(), width = 10, height = 8, units = "in")
 
 ```
 
@@ -196,27 +210,24 @@ combined_summary <- bind_rows(
 )
 
 coef_short_names <- 
-  c("cause_of_death_icd_10Malignant neoplasms [C00-C97]"
-    = "malignant neoplasms",
-    "cause_of_death_icd_10Diseases of heart [I00-I09,..."
-    = "Diseases of heart",
-    "cause_of_death_icd_10Malignant neoplasms of trac..."
-    = "Respiratory malignant neoplasms",
+  c("cause_of_death_icd_10Malignant Neoplasms"
+    = "Malignant Neoplasms",
+    "cause_of_death_icd_10Diseases of Heart"
+    = "Diseases of Heart",
+    "cause_of_death_icd_10Respiratory Malignant Neoplasms"
+    = "Respiratory Malignant Neoplasms",
     "cause_of_death_icd_10Dementia [F010-F019, F03]"
     = "Dementia",
-    "cause_of_death_icd_10COVID-19 [U07.1, U07.2, U10.9]"
+    "cause_of_death_icd_10COVID-19"
     = "COVID-19",
-    "cause_of_death_icd_10Major cardiovascular diseas..."
-    = "Major cardiovascular diseases",
-  
-    "cause_of_death_icd_10Ischaemic heart diseases [I..."
-    = "Ischaemic heart diseases",
-    
-    "cause_of_death_icd_10Unspecified dementia [F03]"
-    = "Unspecified dementia",
-    
-    "cause_of_death_icd_10Other forms of chronic isch..."
-    = "Other chronic ischchaemic heart diseases"
+    "cause_of_death_icd_10Major Cardiovascular Diseases"
+    = "Major Cardiovascular Diseases",
+    "cause_of_death_icd_10Ischaemic Heart Diseases"
+    = "Ischaemic Heart Diseases",
+    "cause_of_death_icd_10Unspecified Dementia"
+    = "Unspecified Dementia",
+    "cause_of_death_icd_10Other Chronic Ischchaemic Heart Diseases"
+    = "Other Chronic Ischchaemic Heart Diseases"
     )
 
 combined_summary$term <- 
@@ -235,17 +246,6 @@ modelsummary(models_list, coef_map = coef_short_names)
 
 ```
 
-```{r}
-#| label: tbl-4
-#| warning: false
-#| tbl-cap: "Modeling the most prevalent cause of deaths in Canada, 2001-2020"
-
-modelsummary(
-  list(
-    "Poisson" = cause_of_death_poisson,
-    "Negative binomial" = cause_of_death_neg_binomial
-  ))
-```
 
 ```{r}
 #| echo: true

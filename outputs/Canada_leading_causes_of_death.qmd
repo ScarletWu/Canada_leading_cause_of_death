@@ -10,6 +10,7 @@ editor: visual
 #| eacho: false
 
 library(dplyr)
+library(bayesplot)
 library(tibble)
 library(knitr)
 library(stringr)
@@ -18,7 +19,8 @@ library(modelsummary)
 library(rstanarm)
 library(devtools)
 library(readr)
-
+library(broom)
+library(broom.mixed)
 ```
 
 ```{r}
@@ -111,7 +113,7 @@ top_5 |>
 datasummary(
   value ~ Min + Mean + Max + SD + Var + N,
   fmt = 0,
-  data = data
+  data = top_5
 )
 ```
 ```{r}
@@ -123,7 +125,7 @@ datasummary(
 cause_of_death_poisson <-
   stan_glm(
     value ~ cause_of_death_icd_10,
-    data = data,
+    data = top_5,
     family = poisson(link = "log"),
     seed = 853
   )
@@ -131,7 +133,7 @@ cause_of_death_poisson <-
 cause_of_death_neg_binomial <-
   stan_glm(
     value ~ cause_of_death_icd_10,
-    data = data,
+    data = top_5,
     family = neg_binomial_2(link = "log"),
     seed = 853
   )
@@ -155,13 +157,59 @@ saveRDS(
 ```
 
 
+
 ```{r}
 #| label: tbl-3
 #| warning: false
 #| tbl-cap: "Modeling the most prevalent cause of deaths in Canada, 2001-2020"
-summary(cause_of_death_poisson)
-summary(cause_of_death_neg_binomial)
 
+poisson_summary <- summary(cause_of_death_poisson)
+neg_binomial_summary <- summary(cause_of_death_neg_binomial)
+
+
+
+
+tidy_poisson <- tidy(cause_of_death_poisson)
+tidy_neg_binomial <- tidy(cause_of_death_neg_binomial)
+
+combined_summary <- bind_rows(
+  mutate(tidy_poisson, model = "Poisson"),
+  mutate(tidy_neg_binomial, model = "Negative Binomial")
+)
+
+coef_short_names <- 
+  c("cause_of_death_icd_10Malignant neoplasms [C00-C97]"
+    = "malignant neoplasms",
+    "cause_of_death_icd_10Diseases of heart [I00-I09,..."
+    = "Diseases of heart",
+    "cause_of_death_icd_10Falls [W00-W19]"
+    = "Falls",
+    "cause_of_death_icd_10Dementia [F010-F019, F03]"
+    = "Dementia",
+    "cause_of_death_icd_10COVID-19 [U07.1, U07.2, U10.9]"
+    = "COVID-19"
+    )
+
+combined_summary$term <- 
+  ifelse(combined_summary$term %in% names(coef_short_names),
+    coef_short_names[combined_summary$term],
+    combined_summary$term)
+
+models_list <- list(
+  Poisson = cause_of_death_poisson,
+  `Negative Binomial` = cause_of_death_neg_binomial
+)
+
+
+modelsummary(models_list, coef_map = coef_short_names)
+
+
+```
+
+```{r}
+#| label: tbl-3
+#| warning: false
+#| tbl-cap: "Modeling the most prevalent cause of deaths in Canada, 2001-2020"
 
 modelsummary(
   list(
@@ -198,9 +246,12 @@ loo_compare(poisson, neg_binomial)
 ```
 
 
+```{r}
 
-
-
+color_scheme_set("brightblue")
+mcmc_trace(as.array(cause_of_death_poisson), pars = c("(Intercept)", "beta[1]"))
+mcmc_trace(as.array(cause_of_death_neg_binomial), pars = c("(Intercept)", "beta[1]"))
+```
 
 
 

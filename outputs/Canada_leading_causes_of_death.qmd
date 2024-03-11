@@ -7,7 +7,7 @@ editor: visual
 
 ```{r}
 #| message: false
-#| eacho: false
+#| include: false
 
 library(dplyr)
 library(bayesplot)
@@ -89,31 +89,6 @@ top_nine <-
 top_9 <-
   data |>
   filter(cause_of_death_icd_10 %in% top_nine)
-
-
-coef_short_names <- 
-  c("Malignant neoplasms [C00-C97]"
-    = "malignant neoplasms",
-    "Diseases of heart [I00-I09, I11, I13, I20-I51]"
-    = "Diseases of heart",
-    "Malignant neoplasms of trachea, bronchus and lung [C33-C34]"
-    = "Respiratory malignant neoplasms",
-    "Dementia [F010-F019, F03]"
-    = "Dementia",
-    "COVID-19 [U07.1, U07.2, U10.9]"
-    = "COVID-19",
-    "Major cardiovascular diseases [I00-I78]"
-    = "Major cardiovascular diseases",
-    "Ischaemic heart diseases [I20-I25]"
-    = "Ischaemic heart diseases",
-    "Unspecified dementia [F03]"
-    = "Unspecified dementia",
-    "Other forms of chronic ischaemic heart disease [I20, I25]"
-    = "Other chronic ischchaemic heart diseases"
-    )
-
-top_9 <- top_9 %>%
-  mutate(cause_of_death_icd_10 = recode(cause_of_death_icd_10, !!!coef_short_names))
 
 
 top_9 |>
@@ -219,7 +194,7 @@ coef_short_names <-
     = "Unspecified dementia",
     
     "cause_of_death_icd_10Other forms of chronic isch..."
-    = "Other chronic ischchaemic heart diseases",
+    = "Other chronic ischchaemic heart diseases"
     )
 
 combined_summary$term <- 

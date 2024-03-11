@@ -22,6 +22,7 @@ library(readr)
 library(broom)
 library(broom.mixed)
 ```
+
 # Introduction
 
 
@@ -31,6 +32,7 @@ The study utilized a cleaned dataset, which included data on the leading causes 
 
 
 # Result
+
 ```{r}
 #| message: false
 #| include: false
@@ -44,7 +46,6 @@ death_simulation <-
 death_simulation
 ```
 
-
 ```{r}
 #| message: false
 #| echo: false
@@ -56,8 +57,6 @@ data <- read_csv(data_path) %>%
   mutate(cause_of_death_icd_10 = str_trunc(cause_of_death_icd_10, 30))
 
 ```
-
-
 
 ```{r}
 #| label: tbl-1
@@ -78,10 +77,6 @@ top_10 |>
       digits = 0, booktabs = TRUE, linesep = ""
     )
 ```
-
-
-
-
 
 ```{r}
 
@@ -136,6 +131,7 @@ datasummary(
   data = top_9
 )
 ```
+
 ```{r}
 #| echo: true
 #| eval: true
@@ -175,8 +171,6 @@ saveRDS(
   file = "/cloud/project/outputs/model/cause_of_death_neg_binomial.rds"
 )
 ```
-
-
 
 ```{r}
 #| label: tbl-3
@@ -273,8 +267,4 @@ neg_binomial <- loo(cause_of_death_neg_binomial, cores = 2)
 
 loo_compare(poisson, neg_binomial)
 ```
-
-
-
-
 

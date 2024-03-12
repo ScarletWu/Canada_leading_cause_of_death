@@ -336,7 +336,7 @@ pp_check(cause_of_death_neg_binomial) +
 
 
 
-
+\newpage
 ```{r}
 #| message: false
 #| warning: false

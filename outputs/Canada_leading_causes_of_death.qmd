@@ -1,5 +1,5 @@
 ---
-title: "Canada_leading_causes_of_death"
+title: "Exploring Mortality Trends in Canada: A Statistical Analysis of Causes of Death from 2000 to 2022"
 author: "Scarlet Ruoxian Wu"
 format: pdf
 date: "March 12, 2024"
@@ -339,9 +339,9 @@ pp_check(cause_of_death_neg_binomial) +
 #| warning: false
 #| eacho: false
 
-poisson <- loo(cause_of_death_poisson, cores = 2)
+poisson <- loo(cause_of_death_poisson, cores = 1)
 
-neg_binomial <- loo(cause_of_death_neg_binomial, cores = 2)
+neg_binomial <- loo(cause_of_death_neg_binomial, cores = 1)
 
 loo_compare(poisson, neg_binomial)
 

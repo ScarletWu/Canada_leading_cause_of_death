@@ -2,7 +2,13 @@
 title: "Canada_leading_causes_of_death"
 author: "Scarlet Ruoxian Wu"
 format: pdf
-editor: visual
+date: "March 12, 2024"
+date-format: long
+toc: true
+number-sections: true
+bibliography: references.bib
+thanks: "Code and data are available at: https://github.com/ScarletWu/Canada_leading_cause_of_death.git"
+abstract: ""
 ---
 
 ```{r}
@@ -25,9 +31,25 @@ library(broom.mixed)
 
 # Introduction
 
-# Methods
+Mortality involves the complex interplay between lifestyle, environment, healthcare access, and genetic predisposition. Every year, mortality statistics shed light on a nation's health and the effectiveness of its healthcare system. The Canadian government has kept records of causes of death from 2000 to 2022. This study aims to examine the leading causes of death during this period, identify patterns, highlight healthcare challenges, and suggest potential improvements in public health policy. The primary estimate of this study is the annual number of deaths attributed to various causes.
 
-The study utilized a cleaned dataset, which included data on the leading causes of death in Canada. The data was sourced from a comprehensive database containing records from 2000 to 2022. The causes of death were categorized according to the ICD-10 classification system. The dataset was filtered to focus on the data from the year 2022, and the top nine causes of death by rank were selected for in-depth analysis.
+This analysis aims to understand the complexity of mortality data and the variability in death counts. The study employs the simulation of datasets using the negative binomial distribution. This particular distribution is well-suited to model count data, especially in cases where the data exhibit over-dispersion. By simulating datasets, this study aims to gain insights into the potential distributions of deaths by cause and year, allowing for a deeper understanding of the trends and variability in the actual data.
+
+This study employs both Poisson and negative binomial regression models to analyze the Candian death data. The reason to use both models is to accommodate the variable nature of mortality counts. While Poisson regression is a conventional choice for count data, it assumes equality between the mean and variance of the data, which is often not the case in mortality statistics due to over-dispersion. In contrast, the negative binomial model provides greater flexibility by accommodating over-dispersion, making it a more realistic tool for analyzing the complex nature of mortality data.
+
+The critical comparison between Poisson and negative binomial models in this analysis is not merely a statistical preference but a methodological necessity. It underscores the importance of selecting a model that accurately reflects the data's underlying distribution, ensuring the reliability and validity of the findings. This comparison is instrumental in identifying the model that best captures the nuances of mortality data, thereby providing a solid foundation for concluding the leading causes of death in Canada and the potential implications for public health policies and initiatives.
+
+In summary, this paper comprehensively analyzes mortality data from Canada by using Poisson and negative binomial models to capture the nuances of death-related statistics. The primary estimand —the annual number of deaths by various causes—sets the stage for a detailed exploration of mortality patterns within Canada. Besides quantifying the burden of mortality, this study reveals underlying trends that can inform future health policies and interventions to reduce preventable deaths and improve Canadians' health and well-being.
+
+# Data
+
+This analysis examines mortality data in Canada from 2000 to 2022 obtained from the comprehensive database maintained by Statistics Canada. The data includes the annual number of deaths categorized by different causes, offering a detailed view of mortality trends in the country. The primary variables of interest are the year of death, the cause of death according to the ICD-10 classification, and the total number of deaths attributed to each cause. These variables provide an overview of how mortality patterns have changed over the past two decades, reflecting the impact of healthcare advancements, public health initiatives, and emerging challenges.
+
+To prepare the dataset for analysis, we made significant efforts to ensure that the data was clean and appropriately structured. This included truncating the cause of death descriptions for readability and consistency, which helped ensure that our analyses were accurate and easy to interpret. We chose the Canadian dataset specifically due to its comprehensive coverage and the high quality of data reporting standards maintained by Statistics Canada. This allowed us to gain a nuanced understanding of mortality within the Canadian context, which may differ from individual provincial trends due to various socio-economic, environmental, and healthcare factors.
+
+To explore and visualize the data, we used a suite of R packages, each chosen for its specific capabilities. The dplyr package facilitated efficient data manipulation, while ggplot2 helped us visualize trends and patterns in mortality. We used Poisson and negative binomial regression techniques to model the data, and rstanarm was chosen for its advanced Bayesian modeling capabilities. The modelsummary package efficiently summarized the results, providing clear and concise insights into the findings. We also utilized the broom and broom.mixed packages to tidy the outputs of our statistical models, making the results more accessible and interpretable.
+
+By systematically examining the variables within the dataset and using rigorous statistical modeling, this analysis provides a deeper understanding of mortality trends in Canada, underscoring the critical role of data-driven approaches in public health planning and evaluation.
 
 # Result
 

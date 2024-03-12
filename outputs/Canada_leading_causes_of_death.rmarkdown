@@ -29,6 +29,7 @@ library(broom)
 library(broom.mixed)
 ```
 
+
 # Introduction
 
 Mortality involves the complex interplay between lifestyle, environment, healthcare access, and genetic predisposition. Every year, mortality statistics shed light on a nation's health and the effectiveness of its healthcare system. The Canadian government has kept records of causes of death from 2000 to 2022. This study aims to examine the leading causes of death during this period, identify patterns, highlight healthcare challenges, and suggest potential improvements in public health policy. The primary estimate of this study is the annual number of deaths attributed to various causes.
@@ -55,6 +56,7 @@ By systematically examining the variables within the dataset and using rigorous 
 The analysis comprises various elements that are meticulously designed to provide a comprehensive insight into the mortality trends prevailing in Canada. It involves statistical models to analyze these trends and evaluate the model performance. 
 
 The analysis begins with the creation of a simulated death dataset that replicates the structure of real-world data, where causes of death over the years 2000 to 2022 are distributed according to a negative binomial distribution. @fig-0 shows the simulated distributions of death for each cause. 
+
 ```{r}
 #| eval: true
 #| message: false
@@ -123,7 +125,9 @@ data <- read_csv(data_path) %>%
 
 ```
 
+
 @tbl-1 ranks the ten leading causes of death in Canada for the year 2022. It lists the specific causes, the number of deaths attributed to each cause, and the rank based on the number of deaths. This snapshot is crucial for understanding the most pressing health threats faced by Canadians in the latest year of the study.
+
 
 
 
@@ -148,7 +152,9 @@ top_10 |>
     )
 ```
 
+
 @fig-1 shows a series of line graphs, each representing a different cause of death in Canada, such as heart disease, cancer, and dementia. Each line displays the change in the number of deaths from 2000 to 2022, enabling viewers to track how each cause of death has fluctuated over time. One noticeable line represents COVID-19, indicating its emergence and impact in recent years.
+
 
 
 ```{r, fig.width=12, fig.height=16}
@@ -202,7 +208,9 @@ top_9 |>
   )
 
 ```
+
 @tbl-2 provides a broad overview of the number of deaths from the top causes over the years. It includes the minimum, maximum, and average number of deaths, standard deviation, variance, and the total count of data points (N). These statistics offer a foundational understanding of the distribution and variability of mortality data.
+
 
 ```{r}
 #| echo: false
@@ -218,7 +226,9 @@ datasummary(
 ```
 
 
+
 The analysis uses two statistical methods to study the causes of death. The Poisson model was first applied. However, this model can sometimes be limited due to its assumption of equal mean and variance. To address this limitation and consider over-dispersion in the data, the negative binomial model was also used. This model allows for greater variance than the mean, providing a more detailed understanding of the mortality data. These models were useful in clarifying the relationship between various causes of death and their frequencies over time.
+
 
 ```{r}
 #| include: false
@@ -260,7 +270,9 @@ saveRDS(
 )
 ```
 
+
 The model summary compares the coefficient estimates from both Poisson and negative binomial models for the leading causes of death. The estimates measure the impact each cause has on mortality rates. A higher value suggests a greater influence on increasing death rates. This table is crucial in discerning the relative importance of each cause in the context of mortality (@tbl-3).
+
 
 ```{r}
 #| label: tbl-3
@@ -315,7 +327,9 @@ models_list <- list(
 modelsummary(models_list, coef_map = coef_short_names)
 ```
 
+
 @fig-2 demonstrates how well the Poisson and negative binomial models fit the actual data. The dark line represents the observed data, while the lighter lines or bands show the range of outcomes predicted by the models. A close match between the two indicates a good fit, meaning the model's predictions closely align with the real-world data.
+
 
 ```{r}
 #| echo: false
@@ -346,6 +360,7 @@ neg_binomial <- loo(cause_of_death_neg_binomial, cores = 2)
 loo_compare(poisson, neg_binomial)
 
 ```
+
 The Leave-One-Out Cross-Validation (LOO-CV) comparison provides a statistical method to determine which model, Poisson or negative binomial, predicts the data more accurately. The result shows the difference in the expected log predictive density (ELPD) and its standard error (SE). In this scenario, the negative binomial model proves to be a superior choice compared to the Poisson model due to its higher ELPD. 
 
 #Discussion

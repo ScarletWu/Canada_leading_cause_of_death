@@ -1,9 +1,9 @@
 ## Overview
+This repo is a in depth analysis of  leading cause of death in Canada from 2000 to 2022. We employ Poisson and negative binomial models to explore the distribution and dynamics of mortality causes. The analysis could be used to inform better health policy decisions and interventions.
 
-This repo is a in depth analysis of  leading cause of death in Canada from 2000 to 2022.
 
 ## LLM Usage
-LLM's like ChatGPT have been used for code explanation, error explanations and fixes. The chat can be found in LLM/llm.rtf.
+LLM's like ChatGPT have been used for code explanation, error explanations and fixes. The chat can be found in LLM/llm.txt.
 
 ## File Structure
 The repo is structured as:

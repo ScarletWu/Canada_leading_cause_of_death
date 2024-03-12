@@ -47,7 +47,7 @@ This analysis examines mortality data in Canada from 2000 to 2022 obtained from 
 
 To prepare the dataset for analysis, we made significant efforts to ensure that the data was clean and appropriately structured. This included truncating the cause of death descriptions for readability and consistency, which helped ensure that our analyses were accurate and easy to interpret. We chose the Canadian dataset specifically due to its comprehensive coverage and the high quality of data reporting standards maintained by Statistics Canada. This allowed us to gain a nuanced understanding of mortality within the Canadian context, which may differ from individual provincial trends due to various socio-economic, environmental, and healthcare factors.
 
-To explore and visualize the data, we used a suite of R (@r) packages, each chosen for its specific capabilities. The dplyr (@rDplyr) package facilitated efficient data manipulation, while ggplot2 (@rGgplot2) helped us visualize trends and patterns in mortality. We used Poisson and negative binomial regression techniques to model the data, and rstanarm (@rRstanarm) was chosen for its advanced Bayesian modeling capabilities. The modelsummary (@rModelsummary) package efficiently summarized the results, providing clear and concise insights into the findings. We also utilized the broom (@rBroom) and broom.mixed (@rBroomMixed) packages to tidy the outputs of our statistical models, making the results more accessible and interpretable.
+To explore and visualize the data, we used a suite of R [@r] packages, each chosen for its specific capabilities. The dplyr [@rDplyr] package facilitated efficient data manipulation, while ggplot2 [@rGgplot2] helped us visualize trends and patterns in mortality. We used Poisson and negative binomial regression techniques to model the data, and rstanarm [@rRstanarm] was chosen for its advanced Bayesian modeling capabilities. The modelsummary [@rModelsummary] package efficiently summarized the results, providing clear and concise insights into the findings. We also utilized the broom [@rBroom] and broom.mixed [@rBroomMixed] packages to tidy the outputs of our statistical models, making the results more accessible and interpretable.
 
 By systematically examining the variables within the dataset and using rigorous statistical modeling, this analysis provides a deeper understanding of mortality trends in Canada, underscoring the critical role of data-driven approaches in public health planning and evaluation.
 
@@ -334,10 +334,13 @@ pp_check(cause_of_death_neg_binomial) +
   theme(legend.position = "bottom")
 ```
 
+
+
+
 ```{r}
 #| message: false
 #| warning: false
-#| eacho: false
+#| echo: false
 
 poisson <- loo(cause_of_death_poisson, cores = 1)
 
@@ -348,7 +351,8 @@ loo_compare(poisson, neg_binomial)
 ```
 The Leave-One-Out Cross-Validation (LOO-CV) comparison provides a statistical method to determine which model, Poisson or negative binomial, predicts the data more accurately. The result shows the difference in the expected log predictive density (ELPD) and its standard error (SE). In this scenario, the negative binomial model proves to be a superior choice compared to the Poisson model due to its higher ELPD. 
 
-#Discussion
+
+# Discussion
 One important lesson we can learn from this analysis is how different diseases affect mortality rates. The comparison of different models shows that certain causes, such as heart diseases and cancer, consistently rank as the leading causes of death. This information emphasizes the chronic nature of these conditions and may also reflect the impact of an aging population on healthcare systems. The inclusion of COVID-19 as a separate category in recent years highlights how emerging health threats can quickly alter mortality rates.
 
 Another valuable insight we gain from this investigation is how mortality causes change over time. The graph that shows the annual number of deaths per cause reveals the dynamics of how these causes evolve. Some causes, such as cancer and heart diseases, show a steady increase that aligns with population growth and aging. On the other hand, causes such as COVID-19 show a sudden spike due to the pandemic. This trend information can inform healthcare planning, such as resource allocation, to address these evolving challenges.
@@ -359,4 +363,5 @@ Moving forward, it is important to continue this research by incorporating more 
 
 In conclusion, this study is a starting point for a deeper understanding of mortality and its causes. It highlights the persistent and emerging health threats that dominate mortality statistics and emphasizes the importance of tailored health interventions. Further research can provide more detailed insights, ultimately guiding better health policies and outcomes.
 
-#Reference
+\newpage
+# Reference

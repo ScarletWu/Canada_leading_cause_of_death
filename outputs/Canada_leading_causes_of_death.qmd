@@ -27,6 +27,7 @@ library(devtools)
 library(readr)
 library(broom)
 library(broom.mixed)
+library(kableExtra)
 ```
 
 # Introduction
@@ -202,7 +203,7 @@ top_9 |>
   )
 
 ```
-@tbl-2 provides a broad overview of the number of deaths from the top causes over the years. It includes the minimum, maximum, and average number of deaths, standard deviation, variance, and the total count of data points (N). These statistics offer a foundational understanding of the distribution and variability of mortality data.
+@tbl-2 provides a broad overview of the number of deaths from the top causes over the years. It includes the minimum, maximum, and average number of deaths, standard deviation, variance, and the total count of data points. These statistics offer a foundational understanding of the distribution and variability of mortality data.
 
 ```{r}
 #| echo: false
@@ -247,7 +248,7 @@ cause_of_death_neg_binomial <-
 #| include: false
 #| eval: true
 
-# INTERNAL
+# Save models
 
 saveRDS(
   cause_of_death_poisson,
@@ -340,7 +341,7 @@ pp_check(cause_of_death_neg_binomial) +
 ```{r}
 #| message: false
 #| warning: false
-#| echo: false
+#| include: false
 
 poisson <- loo(cause_of_death_poisson, cores = 1)
 
@@ -348,6 +349,22 @@ neg_binomial <- loo(cause_of_death_neg_binomial, cores = 1)
 
 loo_compare(poisson, neg_binomial)
 
+```
+```{r}
+#| label: tbl-4
+#| warning: false
+#| echo: false
+#| tbl-cap: "The result of Leave-One-Out Cross-Validation (LOO-CV) comparison"
+
+loo_results_df <- data.frame(
+  model = c("Negative Binomial", "Poisson"),
+  elpd_diff = c(0.0, -14125.2),
+  se_diff = c(0.0, 1748.0)
+)
+
+kable(loo_results_df, caption = "Comparison of LOO-CV Between Models", align = c('l', 'r', 'r')) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  add_header_above(c(" " = 1, "LOO-CV Metrics" = 2))
 ```
 The Leave-One-Out Cross-Validation (LOO-CV) comparison provides a statistical method to determine which model, Poisson or negative binomial, predicts the data more accurately. The result shows the difference in the expected log predictive density (ELPD) and its standard error (SE). In this scenario, the negative binomial model proves to be a superior choice compared to the Poisson model due to its higher ELPD. 
 
